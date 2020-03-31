@@ -1,7 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from '@apollo/react-hooks';
+
+import PokemonsContainer from './containers/PokemonsContainer';
 
 export default function App() {
   const client = new ApolloClient({
@@ -11,7 +13,7 @@ export default function App() {
   return (
     <ApolloProvider client={client}>
       <View>
-        <Text>Open up App.tsx to start working on your app!</Text>
+        <PokemonsContainer />
       </View>
     </ApolloProvider>
   );

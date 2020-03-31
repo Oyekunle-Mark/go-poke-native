@@ -1,21 +1,27 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default ({ pokemon }) => (
   <View style={styles.pokemon}>
     <View style={styles.pokemonName}>
       <Text style={styles.pokemonNameText}>{pokemon.name}</Text>
     </View>
+
     <View style={styles.pokemonMeta}>
       <Text style={styles.pokemonMetaText}>{pokemon.maxHP}</Text>
       <Text style={styles.pokemonMetaText}>{pokemon.maxCP}</Text>
     </View>
 
-    <img src={pokemon.image} alt={pokemon.name} />
+    <Image source={{ uri: pokemon.image }} style={styles.pokemonImage} />
 
     <View style={styles.pokemonAttacks}>
       {pokemon.attacks.special.slice(0, 3).map(attack => (
-        <Text key={`${attack.name}-${attack.damage}`} style={styles.pokemonAttacksText} >{attack.name}</Text>
+        <Text
+          key={`${attack.name}-${attack.damage}`}
+          style={styles.pokemonAttacksText}
+        >
+          {attack.name}
+        </Text>
       ))}
     </View>
   </View>

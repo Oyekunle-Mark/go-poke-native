@@ -58,11 +58,13 @@ const styles = StyleSheet.create({
     height: 'auto',
     // width: 200,
     // height: 200,
+    marginVertical: 5,
   },
   pokemonMeta: {
     flex: 1,
     marginVertical: 10,
     alignItems: 'center',
+    height: 50,
   },
   pokemonMetaText: {
     color: 'white',
@@ -90,9 +92,9 @@ const styles = StyleSheet.create({
     color: '#fff',
     paddingHorizontal: 10,
     fontSize: 12,
-    marginBottom: 10,
-    wordWrap: 'break-word',
+    marginRight: 10,
+    // wordWrap: 'break-word',
     textAlign: 'center',
-    lineHeight: 15,
+    // lineHeight: 15,
   },
 });

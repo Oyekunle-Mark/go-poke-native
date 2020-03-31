@@ -92,9 +92,11 @@ const styles = StyleSheet.create({
     color: '#fff',
     paddingHorizontal: 10,
     fontSize: 12,
-    marginRight: 10,
+    marginVertical: 5,
+    marginHorizontal: 5,
     // wordWrap: 'break-word',
     textAlign: 'center',
+    height: 25,
     // lineHeight: 15,
   },
 });

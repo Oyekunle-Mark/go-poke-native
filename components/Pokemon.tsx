@@ -3,19 +3,19 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default ({ pokemon }) => (
   <View style={styles.pokemon}>
-    <View className="pokemon__name">
-      <Text>{pokemon.name}</Text>
+    <View style={styles.pokemonName}>
+      <Text style={styles.pokemonNameText}>{pokemon.name}</Text>
     </View>
-    <View className="pokemon__meta">
-      <Text>{pokemon.maxHP}</Text>
-      <Text>{pokemon.maxCP}</Text>
+    <View style={styles.pokemonMeta}>
+      <Text style={styles.pokemonMetaText}>{pokemon.maxHP}</Text>
+      <Text style={styles.pokemonMetaText}>{pokemon.maxCP}</Text>
     </View>
 
     <img src={pokemon.image} alt={pokemon.name} />
 
-    <View className="pokemon__attacks">
+    <View style={styles.pokemonAttacks}>
       {pokemon.attacks.special.slice(0, 3).map(attack => (
-        <Text key={`${attack.name}-${attack.damage}`}>{attack.name}</Text>
+        <Text key={`${attack.name}-${attack.damage}`} style={styles.pokemonAttacksText} >{attack.name}</Text>
       ))}
     </View>
   </View>
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f16820',
     borderRadius: 3,
     padding: 7,
-    fontWeight: 700,
+    fontWeight: 'bold',
     color: '#fff',
     paddingHorizontal: 10,
     fontSize: 12,

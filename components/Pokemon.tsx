@@ -51,4 +51,19 @@ const styles = StyleSheet.create({
     maxWidth: 100,
     height: 'auto',
   },
+  pokemonMeta: {
+    flex: 1,
+    marginTop: 10,
+    paddingHorizontal: 10,
+    flexWrap: 'wrap',
+  },
+  pokemonMetaText: {
+    color: 'white',
+    backgroundColor: '#7bb7b7',
+    fontWeight: 'bold',
+    margin: 0,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    borderRadius: 5,
+  },
 });

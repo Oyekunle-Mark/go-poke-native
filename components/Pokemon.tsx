@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default ({ pokemon }) => (
-  <View className="pokemon">
+  <View style={styles.pokemon}>
     <View className="pokemon__name">
       <Text>{pokemon.name}</Text>
     </View>
@@ -20,3 +20,15 @@ export default ({ pokemon }) => (
     </View>
   </View>
 );
+
+const styles = StyleSheet.create({
+    pokemon: {
+        width: '90%',
+        backgroundColor: '#fff',
+        backgroundClip: 'border-box',
+        borderWeight: '1',
+        border$adius: '3',
+        overflow: 'hidden',
+        marginBottom: '20',
+    }
+});

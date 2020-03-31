@@ -21,7 +21,7 @@ export default () => {
         <FlatList
           data={pokemons}
           keyExtractor={item => item.key}
-          renderItem={({ item }) => <Pokemon key={item.key} pokemon={item} />}
+          renderItem={({ item }) => <Pokemon pokemon={item} />}
         />
       )}
     </View>

@@ -31,11 +31,11 @@ const styles = StyleSheet.create({
   pokemon: {
     width: '90%',
     backgroundColor: '#fff',
-    backgroundClip: 'border-box',
-    borderWeight: 1,
-    borderRadius: 3,
+    borderWidth: 2,
+    borderRadius: 5,
+    borderColor: 'rgba(0, 0, 0, 0.125)',
     overflow: 'hidden',
-    marginBottom: 20,
+    marginVertical: 10,
   },
   pokemonName: {
     backgroundColor: '#ecd018',
@@ -50,11 +50,11 @@ const styles = StyleSheet.create({
   },
   pokemonImage: {
     padding: 20,
-    minHeight: 300,
+    // minHeight: 300,
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    maxWidth: 100,
+    // maxWidth: 100,
     height: 'auto',
   },
   pokemonMeta: {

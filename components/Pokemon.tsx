@@ -29,11 +29,11 @@ export default ({ pokemon }) => (
 
 const styles = StyleSheet.create({
   pokemon: {
-    width: 110,
+    width: '90%',
     backgroundColor: '#fff',
     backgroundClip: 'border-box',
     borderWeight: 1,
-    border$adius: 3,
+    borderRadius: 3,
     overflow: 'hidden',
     marginBottom: 20,
   },

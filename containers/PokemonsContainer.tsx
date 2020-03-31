@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View, FlatList } from 'react-native';
 import { useQuery } from '@apollo/react-hooks';
 import Spinner from 'react-spinner-material';
 
@@ -18,7 +18,11 @@ export default () => {
           <Spinner radius={50} color={'#f16820'} stroke={2} visible={true} />
         </div>
       ) : (
-        pokemons.map(pokemon => <Pokemon key={pokemon.key} pokemon={pokemon} />)
+        <FlatList
+          data={pokemons}
+          keyExtractor={item => item.key}
+          renderItem={({ item }) => <Pokemon key={item.key} pokemon={item} />}
+        />
       )}
     </View>
   );

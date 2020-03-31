@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, FlatList } from 'react-native';
 
 export default ({ pokemon }) => (
   <View style={styles.pokemon}>
@@ -23,6 +23,13 @@ export default ({ pokemon }) => (
           {attack.name}
         </Text>
       ))}
+      {/* <FlatList
+        data={pokemon.attacks.special.slice(0, 3)}
+        keyExtractor={item => `${JSON.stringify(item)}`}
+        renderItem={({ item }) => (
+          <Text style={styles.pokemonAttacksText}>{item.name}</Text>
+        )}
+      /> */}
     </View>
   </View>
 );

@@ -66,4 +66,22 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     borderRadius: 5,
   },
+  pokemonAttacks: {
+    flex: 1,
+    paddingHorizontal: 10,
+  },
+  pokemonAttacksText: {
+    width: 30,
+    backgroundColor: '#f16820',
+    borderRadius: 3,
+    padding: 7,
+    fontWeight: 700,
+    color: '#fff',
+    paddingHorizontal: 10,
+    fontSize: 12,
+    marginBottom: 10,
+    wordWrap: 'break-word',
+    textAlign: 'center',
+    lineHeight: 15,
+  },
 });

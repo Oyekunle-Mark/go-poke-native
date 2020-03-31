@@ -54,10 +54,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    // maxWidth: 100,
     height: 'auto',
-    // width: 200,
-    // height: 200,
     marginVertical: 5,
   },
   pokemonMeta: {
@@ -84,7 +81,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   pokemonAttacksText: {
-    // width: '30%',
     backgroundColor: '#f16820',
     borderRadius: 3,
     padding: 7,
@@ -94,9 +90,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     marginVertical: 5,
     marginHorizontal: 5,
-    // wordWrap: 'break-word',
     textAlign: 'center',
     height: 25,
-    // lineHeight: 15,
   },
 });
